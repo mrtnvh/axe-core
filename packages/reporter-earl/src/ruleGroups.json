@@ -1,0 +1,814 @@
+[
+  {
+    "id": "area-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/area-alt",
+    "actRulePage": "https://act-rules.github.io/rules/c487ae",
+    "ruleSets": {
+      "WCAG 2.0": [
+        "https://www.w3.org/TR/WCAG20/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG20/#name-role-value"
+      ],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/WCAG21/#link-purpose-link-only",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G91"
+      ],
+      "WCAG 2.2": [
+        "https://www.w3.org/TR/WCAG22/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    }
+  },
+  {
+    "id": "aria-allowed-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-allowed-attr",
+    "actRulePage": "https://act-rules.github.io/rules/5c01ea",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+        "https://www.w3.org/TR/wai-aria-1.1/#state_property_processing"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-braille-equivalent",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-braille-equivalent",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-command-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-command-name",
+    "actRulePage": "https://act-rules.github.io/rules/97a4e1",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-conditional-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-conditional-attr",
+    "actRulePage": "https://act-rules.github.io/rules/5c01ea",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+        "https://www.w3.org/TR/wai-aria-1.1/#state_property_processing"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-deprecated-role",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-deprecated-role",
+    "actRulePage": "https://act-rules.github.io/rules/674b10",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/WCAG21/#info-and-relationships",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G108"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-hidden-body",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-hidden-focus",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus",
+    "actRulePage": "https://act-rules.github.io/rules/6cfa84",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/using-aria/#fourth"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-input-field-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-input-field-name",
+    "actRulePage": "https://act-rules.github.io/rules/e086e5",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-meter-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-meter-name",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#non-text-content"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "aria-progressbar-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-progressbar-name",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#non-text-content"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-prohibited-attr",
+    "actRulePage": "https://act-rules.github.io/rules/5c01ea",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+        "https://www.w3.org/TR/wai-aria-1.1/#state_property_processing"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-required-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-required-attr",
+    "actRulePage": "https://act-rules.github.io/rules/4e8ab6",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-required-children",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-required-children",
+    "actRulePage": "https://act-rules.github.io/rules/bc4a75",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "aria-required-parent",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-required-parent",
+    "actRulePage": "https://act-rules.github.io/rules/ff89c9",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "aria-roles",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-roles",
+    "actRulePage": "https://act-rules.github.io/rules/674b10",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/WCAG21/#info-and-relationships",
+        "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G108"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-toggle-field-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-toggle-field-name",
+    "actRulePage": "https://act-rules.github.io/rules/e086e5",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-tooltip-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-tooltip-name",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-valid-attr-value",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value",
+    "actRulePage": "https://act-rules.github.io/rules/6a7281",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/wai-aria-1.1/#state_prop_values"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "aria-valid-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr",
+    "actRulePage": "https://act-rules.github.io/rules/5f99a7",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "blink",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/blink",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#pause-stop-hide"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#pause-stop-hide"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#pause-stop-hide"]
+    }
+  },
+  {
+    "id": "button-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/button-name",
+    "actRulePage": "https://act-rules.github.io/rules/97a4e1",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "bypass",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/bypass",
+    "actRulePage": "https://act-rules.github.io/rules/cf77f2",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#bypass-blocks"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#bypass-blocks",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G123",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G124",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H69",
+        "https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#bypass-blocks"]
+    }
+  },
+  {
+    "id": "color-contrast",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/color-contrast",
+    "actRulePage": "https://act-rules.github.io/rules/afw4f7",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#contrast-minimum"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#contrast-minimum",
+        "https://www.w3.org/TR/WCAG21/#contrast-enhanced"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#contrast-minimum"]
+    }
+  },
+  {
+    "id": "definition-list",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/definition-list",
+    "ruleSets": {
+      "WCAG 2.0": [],
+      "WCAG 2.1": [],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "dlitem",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/dlitem",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "document-title",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/document-title",
+    "actRulePage": "https://act-rules.github.io/rules/2779a5",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#page-titled"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#page-titled",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G88",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H25"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#page-titled"]
+    }
+  },
+  {
+    "id": "duplicate-id-aria",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/duplicate-id-aria",
+    "actRulePage": "https://act-rules.github.io/rules/3ea0c8",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/WCAG21/#parsing",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H93"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "form-field-multiple-labels",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/form-field-multiple-labels",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#labels-or-instructions"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#labels-or-instructions"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#labels-or-instructions"]
+    }
+  },
+  {
+    "id": "frame-focusable-content",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/frame-focusable-content",
+    "actRulePage": "https://act-rules.github.io/rules/akn7bn",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#keyboard"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#keyboard",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G202"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#keyboard"]
+    }
+  },
+  {
+    "id": "frame-title-unique",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/frame-title-unique",
+    "actRulePage": "https://act-rules.github.io/rules/4b1c6c",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "frame-title",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/frame-title",
+    "actRulePage": "https://act-rules.github.io/rules/cae760",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "html-has-lang",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang",
+    "actRulePage": "https://act-rules.github.io/rules/b5c3f8",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#language-of-page"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#language-of-page",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#language-of-page"]
+    }
+  },
+  {
+    "id": "html-lang-valid",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid",
+    "actRulePage": "https://act-rules.github.io/rules/bf051a",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#language-of-page"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#language-of-page",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#language-of-page"]
+    }
+  },
+  {
+    "id": "html-xml-lang-mismatch",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/html-xml-lang-mismatch",
+    "actRulePage": "https://act-rules.github.io/rules/5b7ae0",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#language-of-page"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#language-of-page"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#language-of-page"]
+    }
+  },
+  {
+    "id": "image-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/image-alt",
+    "actRulePage": "https://act-rules.github.io/rules/23a2a8",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#non-text-content",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G95"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "input-button-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/input-button-name",
+    "actRulePage": "https://act-rules.github.io/rules/97a4e1",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "input-image-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/input-image-alt",
+    "actRulePage": "https://act-rules.github.io/rules/59796f",
+    "ruleSets": {
+      "WCAG 2.0": [
+        "https://www.w3.org/TR/WCAG20/#non-text-content",
+        "https://www.w3.org/TR/WCAG20/#name-role-value"
+      ],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#non-text-content",
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G95"
+      ],
+      "WCAG 2.2": [
+        "https://www.w3.org/TR/WCAG22/#non-text-content",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    }
+  },
+  {
+    "id": "label",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/label",
+    "actRulePage": "https://act-rules.github.io/rules/e086e5",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "link-in-text-block",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#use-of-color"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#use-of-color"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#use-of-color"]
+    }
+  },
+  {
+    "id": "link-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/link-name",
+    "actRulePage": "https://act-rules.github.io/rules/c487ae",
+    "ruleSets": {
+      "WCAG 2.0": [
+        "https://www.w3.org/TR/WCAG20/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG20/#name-role-value"
+      ],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG21/#name-role-value",
+        "https://www.w3.org/TR/WCAG21/#link-purpose-link-only",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G91"
+      ],
+      "WCAG 2.2": [
+        "https://www.w3.org/TR/WCAG22/#link-purpose-in-context",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    }
+  },
+  {
+    "id": "list",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/list",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "listitem",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/listitem",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "marquee",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/marquee",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#pause-stop-hide"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#pause-stop-hide"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#pause-stop-hide"]
+    }
+  },
+  {
+    "id": "meta-refresh",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/meta-refresh",
+    "actRulePage": "https://act-rules.github.io/rules/bc659a",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#timing-adjustable"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#timing-adjustable",
+        "https://www.w3.org/TR/WCAG21/#interruptions",
+        "https://www.w3.org/TR/WCAG21/#change-on-request",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G110",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H76"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#timing-adjustable"]
+    }
+  },
+  {
+    "id": "meta-viewport",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/meta-viewport",
+    "actRulePage": "https://act-rules.github.io/rules/b4f0c3",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#resize-text"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#resize-text"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#resize-text"]
+    }
+  },
+  {
+    "id": "nested-interactive",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive",
+    "actRulePage": "https://act-rules.github.io/rules/307n5z",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "no-autoplay-audio",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/no-autoplay-audio",
+    "actRulePage": "https://act-rules.github.io/rules/80f0bf",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#audio-control"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#audio-control",
+        "https://www.w3.org/TR/WCAG21/#cc5",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G60",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G171"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#audio-control"]
+    }
+  },
+  {
+    "id": "object-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/object-alt",
+    "actRulePage": "https://act-rules.github.io/rules/8fc3b6",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#non-text-content"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "role-img-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/role-img-alt",
+    "actRulePage": "https://act-rules.github.io/rules/23a2a8",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#non-text-content",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G95"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "scrollable-region-focusable",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable",
+    "actRulePage": "https://act-rules.github.io/rules/0ssw9k",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#keyboard"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#keyboard",
+        "https://www.w3.org/TR/WCAG21/#keyboard-no-exception",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G202"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#keyboard"]
+    }
+  },
+  {
+    "id": "select-name",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/select-name",
+    "actRulePage": "https://act-rules.github.io/rules/e086e5",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "server-side-image-map",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/server-side-image-map",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#keyboard"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#keyboard"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#keyboard"]
+    }
+  },
+  {
+    "id": "svg-img-alt",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/svg-img-alt",
+    "actRulePage": "https://act-rules.github.io/rules/7d6734",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#non-text-content"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#non-text-content"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#non-text-content"]
+    }
+  },
+  {
+    "id": "td-headers-attr",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/td-headers-attr",
+    "actRulePage": "https://act-rules.github.io/rules/a25f45",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#info-and-relationships",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H43"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "th-has-data-cells",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/th-has-data-cells",
+    "actRulePage": "https://act-rules.github.io/rules/d0f69e",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#info-and-relationships"]
+    }
+  },
+  {
+    "id": "valid-lang",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/valid-lang",
+    "actRulePage": "https://act-rules.github.io/rules/de46e4",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#language-of-parts"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#language-of-parts",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H58"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#language-of-parts"]
+    }
+  },
+  {
+    "id": "video-caption",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/video-caption",
+    "actRulePage": "https://act-rules.github.io/rules/eac66b",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#captions-prerecorded"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#captions-prerecorded",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H95"
+      ],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#captions-prerecorded"]
+    }
+  },
+  {
+    "id": "color-contrast-enhanced",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/color-contrast-enhanced",
+    "actRulePage": "https://act-rules.github.io/rules/09o5cg",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#contrast-enhanced"],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#contrast-enhanced",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G17",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G18"
+      ],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "identical-links-same-purpose",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/identical-links-same-purpose",
+    "actRulePage": "https://act-rules.github.io/rules/b20e66",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#link-purpose-link-only"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#link-purpose-link-only"],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "meta-refresh-no-exceptions",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/meta-refresh-no-exceptions",
+    "actRulePage": "https://act-rules.github.io/rules/bisz58",
+    "ruleSets": {
+      "WCAG 2.0": [
+        "https://www.w3.org/TR/WCAG20/#interruptions",
+        "https://www.w3.org/TR/WCAG20/#change-on-request"
+      ],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#interruptions",
+        "https://www.w3.org/TR/WCAG21/#change-on-request",
+        "https://www.w3.org/WAI/WCAG21/Techniques/general/G110",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H76"
+      ],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "p-as-heading",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/p-as-heading",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "table-fake-caption",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/table-fake-caption",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "td-has-header",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/td-has-header",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#info-and-relationships"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#info-and-relationships"],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "aria-roledescription",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/aria-roledescription",
+    "ruleSets": {
+      "WCAG 2.0": ["https://www.w3.org/TR/WCAG20/#name-role-value"],
+      "WCAG 2.1": ["https://www.w3.org/TR/WCAG21/#name-role-value"],
+      "WCAG 2.2": ["https://www.w3.org/TR/WCAG22/#name-role-value"]
+    }
+  },
+  {
+    "id": "audio-caption",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/audio-caption",
+    "actRulePage": "https://act-rules.github.io/rules/2eb176",
+    "ruleSets": {
+      "WCAG 2.0": [
+        "https://www.w3.org/TR/WCAG20/#audio-only-and-video-only-prerecorded"
+      ],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded"
+      ],
+      "WCAG 2.2": [
+        "https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded"
+      ]
+    }
+  },
+  {
+    "id": "duplicate-id-active",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/duplicate-id-active",
+    "actRulePage": "https://act-rules.github.io/rules/3ea0c8",
+    "ruleSets": {
+      "WCAG 2.0": [],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#parsing",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H93"
+      ],
+      "WCAG 2.2": []
+    }
+  },
+  {
+    "id": "duplicate-id",
+    "rulePage": "https://dequeuniversity.com/rules/axe/4.8/duplicate-id",
+    "actRulePage": "https://act-rules.github.io/rules/3ea0c8",
+    "ruleSets": {
+      "WCAG 2.0": [],
+      "WCAG 2.1": [
+        "https://www.w3.org/TR/WCAG21/#parsing",
+        "https://www.w3.org/WAI/WCAG21/Techniques/html/H93"
+      ],
+      "WCAG 2.2": []
+    }
+  }
+]

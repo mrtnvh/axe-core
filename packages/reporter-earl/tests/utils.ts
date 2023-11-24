@@ -1,9 +1,8 @@
-import { RawResult } from '../src/types';
-import clone from 'clone';
 import axe from 'axe-core';
+import clone from 'clone';
 
-let _dummyData: RawResult[] | axe.AxeResults;
-export async function getDummyData(version = '3.1'): Promise<RawResult[]> {
+let _dummyData: axe.AxeResults;
+export async function getDummyData(): Promise<axe.AxeResults> {
   if (!_dummyData) {
     document.body.innerHTML = `
       <h1>My page </h1>
@@ -13,9 +12,12 @@ export async function getDummyData(version = '3.1'): Promise<RawResult[]> {
       </main>
     `;
     const params: any = {
-      reporter: function (raw: any, _: any, callback: Function) {
-        callback(JSON.parse(JSON.stringify(raw)));
-      },
+      // reporter: function (raw: any, _: any, callback: Function) {
+      //   callback(JSON.parse(JSON.stringify(raw)));
+      // },
+
+      reporter: 'raw-env',
+
       rules: [
         {
           // color contrast checking doesn't work in a jsdom environment (since it depends on canvas)
@@ -26,12 +28,7 @@ export async function getDummyData(version = '3.1'): Promise<RawResult[]> {
     };
     axe.configure(params);
     _dummyData = await axe.run();
+    _dummyData.timestamp = new Date('Mon Jun 28 2021').toISOString();
   }
-  return clone(_dummyData as RawResult[]).map((result: RawResult) => {
-    result.helpUrl = result.helpUrl.replace(
-      /axe\/([1-9][0-9]*\.[1-9][0-9]*)\//,
-      `axe/${version}/`
-    );
-    return result;
-  });
+  return clone(_dummyData as axe.AxeResults);
 }
