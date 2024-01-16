@@ -1,55 +1,41 @@
-import { AuditSample, EarlReport, WcagVersion } from './types';
+import { AuditSample, EarlReport, ResultStatus, WcagVersion } from './types';
 import context from './context.json';
 import axe, { AxeResults } from 'axe-core';
-import ruleGroups from './ruleGroups.json';
 import { getDefaultAuditSamples, getOutcomeByStatus } from './auditSample';
+import { getWcagIdsFromHelpUrl } from './wcagId';
+import { aggregateOutcome } from './outcome';
 
-function cssToPointer(selector: axe.NodeResult[]) {
-  const item = selector?.[0]?.target;
-  if (!item) return '';
-
-  if (Array.isArray(item)) {
-    return `${item[0]}`;
-  }
-  return `${item}`;
-}
-
-function transformWcagUrlToWcagId(wcagUrl: string): string | undefined {
-  // to WCAG21:non-text-content
-  // From https://www.w3.org/TR/WCAG22/#name-role-value
-  // to WCAG22:name-role-value
-  // Ignore URLs that don't match the pattern
-  // https://www.w3.org/WAI/WCAG21/Techniques/general/G202
-  const { hash, pathname } = new URL(wcagUrl);
-  const wcagId = hash.replace('#', '');
-  const wcagVersion = /\/TR\/(.*)\//.exec(pathname)?.[1];
-  const result = `${wcagVersion}:${wcagId}`;
-  if (result.startsWith('WCAG')) return result;
-  return undefined;
-}
-
-function getWcagIdsFromHelpUrl(
-  helpUrl: string,
-  wcagVersion: WcagVersion
-): string[] {
-  let url: URL | undefined = undefined;
-
-  try {
-    url = new URL(helpUrl);
-  } catch (error) {
-    throw new Error(`Invalid helpUrl: ${helpUrl}`);
-  }
-
-  const normalizedUrl = url.origin + url.pathname;
-  const ruleGroup = ruleGroups.find(
-    ({ rulePage }) => rulePage === normalizedUrl
-  );
-  const wcagUrls = ruleGroup?.ruleSets[`WCAG ${wcagVersion}`] || [];
-  return wcagUrls.reduce((acc, wcagUrl) => {
-    const wcagId = transformWcagUrlToWcagId(wcagUrl);
-    if (wcagId) acc.push(wcagId);
-    return acc;
-  }, [] as string[]);
+function getAuditSampleResultDescriptionFromAxeResult({
+  result
+}: {
+  result: axe.Result & { status: ResultStatus };
+}): string {
+  const { nodes, status } = result;
+  return nodes
+    .reduce((acc, node, index) => {
+      const checkResults = [...node.all, ...node.any, ...node.none];
+      const checkResultsDescription = checkResults
+        .reduce(
+          (acc, checkResult) => [acc, `- ${checkResult.message}`].join('\n'),
+          ''
+        )
+        .trim();
+      if (index === 0)
+        return [
+          acc,
+          `**${status}**`,
+          node.target,
+          checkResultsDescription
+        ].join('\n');
+      return [
+        acc,
+        '---',
+        `**${status}**`,
+        node.target,
+        checkResultsDescription
+      ].join('\n');
+    }, '')
+    .trim();
 }
 
 function getAuditSampleFromAxeResults(
@@ -62,34 +48,44 @@ function getAuditSampleFromAxeResults(
     inapplicable: []
   };
 
-  const results: Array<axe.Result & { status: string }> = [
-    ...violations.map(r => ({ ...r, status: 'failed' })),
-    ...passes.map(r => ({ ...r, status: 'passed' })),
-    ...incomplete.map(r => ({ ...r, status: 'incomplete' })),
-    ...inapplicable.map(r => ({ ...r, status: 'inapplicable' }))
+  const results: Array<axe.Result & { status: ResultStatus }> = [
+    ...violations.map(r => ({ ...r, status: 'failed' as ResultStatus })),
+    ...passes.map(r => ({ ...r, status: 'passed' as ResultStatus })),
+    ...incomplete.map(r => ({ ...r, status: 'incomplete' as ResultStatus })),
+    ...inapplicable.map(r => ({ ...r, status: 'inapplicable' as ResultStatus }))
   ];
 
   const defaultAuditSamples = getDefaultAuditSamples({ axeResults });
 
-  const returnValue = results.reduce((acc, result) => {
+  // const test = [] as [string, string][];
+
+  const newAuditSamples = results.reduce((acc, result) => {
     const wcagVersions = getWcagVersionFromTags(result.tags);
     if (!wcagVersions.length) return acc;
     const wcagIds = wcagVersions
       .map(wcagVersion => getWcagIdsFromHelpUrl(result.helpUrl, wcagVersion))
       .flat();
     wcagIds.forEach(wcagId => {
-      const newAuditSample = acc.find(({ test }) => {
+      const newAuditSampleIndex = acc.findIndex(({ test }) => {
         return test?.id.split(':')[1] === wcagId.split(':')[1];
       });
-      if (!newAuditSample) return;
-      const newDescription =
-        cssToPointer(result.nodes) + ':' + result.description;
-      newAuditSample.result.outcome = getOutcomeByStatus(result.status);
-      newAuditSample.result.description += `${newDescription}\n\n`;
+      if (newAuditSampleIndex === -1) return;
+      // test.push([wcagId, result.status]);
+
+      const newOutcome = aggregateOutcome(
+        acc[newAuditSampleIndex].result.outcome,
+        getOutcomeByStatus(result.status)
+      );
+      acc[newAuditSampleIndex].result.outcome = newOutcome;
+      acc[newAuditSampleIndex].result.description +=
+        getAuditSampleResultDescriptionFromAxeResult({ result });
     });
     return acc;
   }, defaultAuditSamples as AuditSample[]);
-  return returnValue;
+
+  // console.log(test);
+
+  return newAuditSamples;
 }
 
 function getDefaultEarlReport({

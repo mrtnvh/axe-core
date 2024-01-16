@@ -168,3 +168,5 @@ export interface DocumentStep {
 }
 
 export type WcagVersion = '2.2' | '2.1' | '2.0';
+
+export type ResultStatus = 'failed' | 'passed' | 'incomplete' | 'inapplicable';

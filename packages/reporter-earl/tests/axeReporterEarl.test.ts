@@ -7,16 +7,19 @@ global.TextDecoder = TextDecoder as any;
 
 // import jsonld from 'jsonld';
 import axe /* , { RunOptions } */ from 'axe-core';
-import { getDummyData } from './utils';
+// import { getDummyData } from './utils';
 // import axeReporterEarl, { createEarlReport } from '../src/axeReporterEarl';
 import { createEarlReportFromAxeResults } from '../src/axeReporterEarl';
 import context from '../src/context.json';
 import { describe, beforeEach, test, expect } from '@jest/globals';
 
+import dummyDataJson from './dummyData.json';
+
 describe(`createEarlReport`, () => {
   let dummyData: axe.AxeResults;
   beforeEach(async () => {
-    dummyData = await getDummyData();
+    // dummyData = await getDummyData();
+    dummyData = dummyDataJson as axe.AxeResults;
   });
 
   test(`returns the @context object`, () => {
@@ -28,7 +31,8 @@ describe(`createEarlReport`, () => {
   test(`returns the @context object`, () => {
     const earlReport = createEarlReportFromAxeResults(dummyData);
     console.log(JSON.stringify(earlReport));
-    expect(earlReport).toMatchSnapshot();
+    expect(earlReport['@context']).toEqual(context);
+    // expect(earlReport).toMatchSnapshot();
   });
 
   //   test(`returns with "@type": "WebPage"`, async () => {

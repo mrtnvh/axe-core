@@ -1,39 +1,17 @@
 import { AxeResults } from 'axe-core';
-import { AuditSample, Outcome } from './types';
+import { AuditSample } from './types';
 import wcag from './wcag.json';
+import { getOutcomeByStatus } from './outcome';
 
-export function getOutcomeByStatus(status?: string): Outcome {
-  switch (status) {
-    case 'passed':
-      return {
-        id: 'earl:passed',
-        type: ['OutcomeValue', 'Pass'],
-        title: 'Passed'
-      };
-    case 'failed':
-      return {
-        id: 'earl:failed',
-        type: ['OutcomeValue', 'Fail'],
-        title: 'Failed'
-      };
-    case 'inapplicable':
-      return {
-        id: 'earl:inapplicable',
-        type: ['OutcomeValue', 'NotApplicable']
-      };
-    default:
-      return {
-        id: 'earl:untested',
-        type: ['OutcomeValue', 'NotTested']
-      };
-  }
-}
-
-export function getDefaultAssertion({
-  axeResults
-}: {
+export type GetDefaultAuditSampleParams = {
+  testId: string;
   axeResults: AxeResults;
-}) {
+};
+
+export function getDefaultAuditSample({
+  testId,
+  axeResults
+}: GetDefaultAuditSampleParams): AuditSample {
   return {
     type: 'Assertion',
     date: axeResults.timestamp,
@@ -47,23 +25,6 @@ export function getDefaultAssertion({
       date: axeResults.timestamp,
       description: '',
       title: axeResults.url
-    }
-  };
-}
-
-export function getDefaultAuditSample({
-  testId,
-  axeResults
-}: {
-  testId: string;
-  axeResults: AxeResults;
-}): AuditSample {
-  const defaultAssertion = getDefaultAssertion({ axeResults });
-  return {
-    ...defaultAssertion,
-    subject: {
-      ...defaultAssertion.subject,
-      description: ''
     },
     test: {
       id: testId,
@@ -79,7 +40,7 @@ export function getDefaultAuditSample({
   };
 }
 
-export function transformWcagJsonToAuditSamples({
+export function getDefaultAuditSamplesFromWcagJson({
   axeResults
 }: {
   axeResults: AxeResults;
@@ -104,5 +65,6 @@ export function getDefaultAuditSamples({
 }: {
   axeResults: AxeResults;
 }) {
-  return transformWcagJsonToAuditSamples({ axeResults });
+  return getDefaultAuditSamplesFromWcagJson({ axeResults });
 }
+export { getOutcomeByStatus };
